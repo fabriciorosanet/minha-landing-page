@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ação ao clicar no botão do WhatsApp
     whatsappButton.addEventListener('click', function () {
-        window.location.href = 'https://w.app/fabriciorosanet';
+        window.location.href = 'https://w.app/4SYBJT';
     });
 });
