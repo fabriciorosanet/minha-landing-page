@@ -13,7 +13,7 @@
     .container-sobre {
         height: auto;
     }
-    
+
     .headline-sobre {
         height: auto;
         position: relative;
@@ -115,7 +115,7 @@
         justify-content: center;
     }
 
-    .case2, 
+    .case2,
     .case4 {
         flex-direction: column-reverse;
         gap: 1rem;
@@ -123,7 +123,7 @@
         height: auto;
         justify-content: center;
     }
-    
+
     .imagens-case {
         width: 100%;
         height: 60vh
@@ -187,7 +187,7 @@
         justify-content: center;
     }
 
-    .logo-contato img{
+    .logo-contato img {
         width: 100%;
         max-height: 500px;
         object-fit: cover;
@@ -201,5 +201,59 @@
         width: auto;
         text-align: right;
         margin-top: 0;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 600px) {
+    .header {
+        padding: 1rem .8rem;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .titulo-servicos h1,
+    .titulo-contato h1 {
+        font-size: 12vw;
+    }
+
+    .descricao-servicos,
+    .headline-portfolio .descricao,
+    .descricao-contato a {
+        font-size: 1.1rem;
+    }
+
+    .box-skills {
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    .box-skills i {
+        font-size: 2.2rem;
+    }
+
+    .card-servicos,
+    .card-servicos-left {
+        border-radius: 40px;
+        padding: 1.2rem;
+    }
+
+    .card-icon {
+        height: 48px;
+    }
+
+    .container-free-your-mind span {
+        font-size: 18vw;
+    }
+
+    .form input,
+    .form textarea {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
     }
 }

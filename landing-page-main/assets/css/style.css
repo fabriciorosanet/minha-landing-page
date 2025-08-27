@@ -54,6 +54,11 @@ body {
     transition: transform 0.3s ease-out;
 }
 
+/* Bloqueia scroll quando o menu está aberto */
+.no-scroll {
+    overflow: hidden;
+}
+
 li {
     list-style: none;
 }
@@ -82,14 +87,14 @@ a {
 #backToTop {
     bottom: 20px;
     left: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 #whatsappButton {
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
     animation: pulse 2s infinite;
 }
 
@@ -107,10 +112,12 @@ a {
         transform: scale(1);
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
     }
+
     50% {
         transform: scale(1.1);
         box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
     }
+
     100% {
         transform: scale(1);
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
@@ -139,9 +146,9 @@ a {
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, .9); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(0, 0, 0, .9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* Logo */
@@ -1109,6 +1116,15 @@ a {
     border: 2px solid rgba(128, 128, 128, 0.5);
     outline: none;
     border-radius: 30px;
+}
+
+.form small {
+    margin-top: .5rem;
+    color: #2e7d32;
+}
+
+.form small.error {
+    color: #c62828;
 }
 
 .logo-contato {
